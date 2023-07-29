@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1024px, initial-scale=1.0">
+    <meta name="viewport" content="width=1024, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <title>Abhi</title>
@@ -157,5 +157,12 @@
 </body>
 <script>
     AOS.init();
+    window.addEventListener("load", isMobileDevice);
+function isMobileDevice() {
+  
+  document.body.style.zoom = "1";
+  return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+}
+
   </script>
 </html>
