@@ -73,7 +73,7 @@ nav{
     height: 100%;
     width: 100%;
     position: absolute;
-    background: url('/common-bg.svg');
+    background: url('Assests/common-bg.svg');
     z-index: -1;
     opacity: 0.4;
 }
